@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: flyway-workshop
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/xe
+    username: flyway_workshop
+    password: flyway_workshop
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  flyway:
+    enabled: true
+    baseline-on-migrate: false
+    out-of-order: false
+    ignore-missing-migrations: false
+    
+ #https://flywaydb.org/documentation/configfiles
